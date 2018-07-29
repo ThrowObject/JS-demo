@@ -1,0 +1,235 @@
+body{
+  background:#2286c6;
+  margin:0pc;
+  padding:0px;
+  /*字体大小*/
+  font-size:12px;
+  /*字体类型*/
+  font-family:Arial;
+  }
+ #container{
+  /* auto 自动分配空间*/
+   margin:0px auto;
+   height:630px;
+   width:783px;
+   /*外层容器所有文字设置向左*/
+   text-align:left;
+   background:#123456;
+   }
+ #banner{
+ margin:0px;
+ padding:0px;
+ background:#789;
+ height:150px;
+ width:100%;
+ }
+ #navigation{
+ margin:0px;
+ padding:0px;
+ }
+ #navigation ul{
+ list-style-type:none;
+ padding:0px;
+ margin:0px;
+ }
+ #navigation ul li{
+ float:left;
+
+ /*设置文本居中*/
+
+ text-align:center;
+ width:78px;
+ }
+ #navigation ul li a{
+  /* display:block;  设置内外边距（盒子的宽度高度）必须是块级元素（块级标签就是盒子）*/
+  /*a是行级标签  行级标签变成块级标签就要设置 display:block;*/
+  /* display:inlink;这是变成行级标签语法*/
+ display:block;
+ padding:9px 6px 11px 6px;
+ margin:0px;
+
+ /*设置背景图片 no-repeat 不覆盖*/
+
+ background:url("images/button1.png") no-repeat;
+ } 
+ /*#navigation a:link默认情况*/
+ /*#navigation:visited访问情况 设置字体样式*/
+ #navigation a:link,#navigation a:visited{
+ color:#0000FF;
+
+ /*设置文本装饰 下划线*/
+
+ text-decoration:underline;
+ } 
+ /*hover  选择鼠标指针浮动在其上的元素，并设置其样式 添加图片有动态效果：*/
+ #navigation a:hover{
+ color:#ffffff;
+ /*设置文本装饰 没有下划线*/
+ text-decoration:none;
+ background:url("images/button_pg.png") no-repeat;
+ }
+ #left{
+ margin:0px;
+ padding:0px 0px 5px 0px;
+ color:#d8ecff;
+ background:#ffffff;
+ width:200px;
+ /*块级元素div 使用float:left;左浮动 变成行级元素*/
+ float:left;
+ }
+ #weather{
+  background: url("images/weather.png")no-repeat 3px 5px;
+ margin:0px 5px;
+ padding:10px;
+ /*设置diuv的背景颜色*/
+ background-color:#5ea6eb;
+ }
+ #weather h3{
+  font-size:12px;
+  
+  padding:24px 0px 0px 74px;
+  color:#000eat 5px 7px;
+ padding:6px 0px 4px 15px;
+ margin:0px 0px 5px 0px;
+ }
+ #today {
+ background:#5ea6eb;
+ margin:0px 5px;
+ padding:0px 0px 10px 0px;
+ }
+ #today ul{
+ list-style-type:none;
+ padding:0px;
+ margin:0px;
+ }
+ #today ul li{
+ text-align:center;
+ }
+ #today ul li img{
+ border:1px solid #ffffff;
+ margin:8px 0px 0px 0px;
+ }
+ #today ul li a:link,#today ul li a:visited{
+ color:#d8ecff;
+ text-decoration:none;
+ }
+ #today ul li a:hover{
+ color:#ffff00;
+ text-decoration:underline;
+ }
+ #middle{
+ margin:0px 2px;
+ padding:5px 0px 5px 0px;
+ background:#ffffff;
+ width:320px;
+ float:left;
+ }
+ #middle div{
+ margin:0px 5px;
+ }
+ #middle h3{
+ margin:0px;
+ padding:0px;
+ height:50px;
+ }
+ #middle h3 span{
+ display:none;/*去掉文字，最终换成图片*/
+ }
+ #beauty{
+ margin:15px 0px 0px 0px;
+ padding:0px;
+ }
+ #beauty h3{
+ background:url("images/meijingxunzong.png")no-repeat 10px 7px;
+ }
+ #beauty ul,#route ul{
+  /*list-style-type: none;去掉无序列表默认符号*/
+   list-style-type: none;
+   margin: 15px 1px 3px 1px;
+   padding: 0px;
+ }
+ #beauty ul li{
+   float: left;
+   width: 97px;
+   text-align: center;
+ }
+ #beauty ul li img{
+   border: 1px solid #123456;
+ }
+ #route{
+   clear: both;
+   margin: 0px;
+   padding: 5px 0px 15px 0px;
+ }
+ #route h3{
+   background: url("images/xianlujingxuan.png") no-repeat 12px 7px;
+ }
+ #route ul li{
+   list-style: none;
+   margin: 0px 0px 35px 0px;
+   padding: 3px 0px 0px 30px;
+   background: url("images/tubiao.png") no-repeat 20px 7px;
+ }
+ #route ul li a:link,#route ul li a:visited{
+   text-decoration: none;
+   color: black;
+ }
+ #route ul li a:hover{
+   text-decoration: underline;
+   color: teal;
+ }
+#right{
+  width: 258px;
+  height: 100%;
+  background:#ffffff;
+  float:left;
+}
+#right div{
+  margin: 0px 5px;
+  background: #5ea6eb;
+}
+#right div h3{
+  font-size: 12px;
+  margin: 10px;
+  padding: 4px 0px 2px 15px;
+  color: #003973;
+  margin: 0px 0px 5px 0px;
+}
+#map p{
+  text-align: center;
+  margin: 0px;
+  padding: 2px 0px 5px 0px;
+}
+#map p img{
+  border:1px solid #ffffff;
+}
+/* 这里可以调节整个右边框(food life高度)的高度 （就是顶部距离） */
+#food，#life{
+  padding-top: 76px;
+}
+#food ul,#life ul{
+  list-style: none;
+  padding: 0px 0px 10px 0px;
+  margin: 40px 40px 0px 10px;
+}
+#food ul li,#life ul li{
+  padding: 3px 0px 3px 12px;
+  border-bottom:1px dashed #eeeeee;
+}
+ #footer{
+ margin:0px;
+ padding:1px 0px;
+ background:#ffffff;
+ clear:both;
+ }
+ #footer p{
+   text-align: center;
+   padding: 0px;
+   margin: 4px 5px 4px 5px;
+   background:#5ea6eb;
+ }
+ #footer p a{
+   color: #ffffff;
+   text-decoration:none;
+ }
+ /*  text-decoration none; 不要有下划线 */

@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+ <head>
+ 	<meta charset="utf-8">
+ 	  <title>小米复习</title>
+ 	  	<style type="text/css">
+ 	    	body{
+ 	    		/*整个背景颜色*/
+ 	    		background: #aaa;
+ 	    	}
+ 	    	/*每一个html标签都有其自己的默认样式，而css则可以改变html的样式。 比如一个div元素，它存在默认的margin值，而设计需要其对齐左上角，那么就要修改其margin值，对于大量的div设置就很麻烦，所以初始化css样式就很重要。        
+
+ 	    	初始化数据*/
+ 	    	body,div,ul,li,input,p,h1,h2,h3,h4,h5,h6{
+ 	  	 	margin: 0;
+ 	  		padding: 0;
+ 	  		color: #000;
+ 	  	    }
+ 	  	    /*图像边框border*/
+ 	  	   img{
+ 	  		border: 0 none;
+ 	  	    }
+ 	  		.pro{
+ 	  			  	/*设置整个盒子宽高*/
+ 	  	            /*有九个盒子*/
+ 	  			width: 1226px;
+ 	  			height: 653px;
+ 	  			/*整个盒子居中*/
+ 	  			margin: 0 auto;
+ 	  		}
+ 	  		/*文字左浮动*/
+ 	  		.fl{
+ 	  			float: left;
+ 	  		}
+ 	  		/*文字右浮动*/
+ 	  		.fr{
+ 	  			float: right;
+ 	  		}
+ 	  		.pro-ai{
+ 	  			height: 38px;
+ 	  		}
+ 	  		.pro-ai-l{
+ 	  			font: 18px 微软雅黑;
+ 	  		}
+ 	  		.pro-ai-r{
+ 	  			font: 14px 微软雅黑;
+ 	  		}
+ 	  		.pro-pic{
+ 	  			height: 642px;
+ 	  			font: 12px 微软雅黑;
+ 	  			text-align: center;
+ 	  		}
+ 	  		.pro-pic-1{
+ 	  			width: 234px;
+ 	  			height: 642px;
+ 	  		}
+ 	  		.pro-pic-2{
+ 	  			width: 234px;
+ 	  			height: 285px;
+ 	  			/*父元素相对定位*/
+ 	  			position: relative;
+ 	  			background: #fff;
+ 	  			margin: 0 0 14px 14px;
+ 	  			/*margin-left:14px;*/
+ 	  		}
+ 	  		/*把免邮费定位到图片上面去*/
+ 	  		.free{
+ 	  			/*子元素绝对定位*/
+ 	  			position: absolute;
+ 	  			background: orange;
+ 	  			width: 64px;
+ 	  			height: 20px;
+ 	  			color: #fff;
+ 	  			/*字体向左移动85px;*/
+ 	  			left:85px;
+ 	  			/*字体放在图片上面*/
+ 	  			top:0px;
+ 	  		}
+ 	  		.fresh{
+ 	  			/*子元素绝对定位*/
+ 	  			position: absolute;
+ 	  			background:green;
+ 	  			width: 64px;
+ 	  			height: 20px;
+ 	  			color: #fff;
+ 	  			left:85px;
+ 	  			top:0px;
+ 	  		}
+ 	  		/*margin-top一般用在相对位置的元素中，例如一个div相对前一个div的上边距是10px，就应该定义margin-top:10px，而不是top:10px。top是用在绝对定位的元素中的，一般是配合position属性使用，假如一个div里面包含了一个ul，如果我们定义ul的position为absolute，top:10px，那么不论div的位置在哪里，这个ul都会距离页面顶部10px*/
+ 	  		.pro-pic-2 img{
+ 	  			margin-top: 16px;
+ 	  		}
+ 	  		.pro-pic-2 p.one{
+ 	  			margin-top: 10px 0px;
+ 	  		}
+ 	  		.pro-pic-2 p.two{
+ 	  			/*底边外边距设置为18px  buttom底部*/
+ 	  			margin-bottom: 18px;
+ 	  		}
+ 	  		.pro-pic-2 p.three{
+ 	  			/*文字大小*/
+ 	  			font-size: 14px;
+ 	  			/*文字颜色*/
+ 	  			color: orange;
+ 	  			/*文字加粗*/
+ 	  			font-weight: 700;
+ 	  		}
+ 	  	</style>
+ 	</head>
+ 	<body>
+ 		<!-- 外面框架 -->
+ 		<div class="pro">
+ 			<!-- 顶部左右浮动pro -->
+ 			<div class="pro-ai">
+ 			<!-- 智能硬件左浮动 -->
+ 			<div class="pro-ai-l fl">智能硬件</div>
+ 			<!-- 查看全部右浮动 -->
+ 			<div class="pro-ai-r fr">查看全部</div>
+ 		</div>
+ 		<!-- pro-pic所有图片的盒子 -->
+ 		<div class="pro-pic">
+ 			<!-- pro-pic-1 黑鲨游戏手机大图片 -->
+ 			<div class="pro-pic-1 fl"><img src="images1/heishashouji.png" alt="黑鲨手机" title="黑鲨手机"></div>
+ 		
+ 			<!-- pro-pic-2 小米称重器 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/weight.png" alt="小米体重器">
+ 				<p class="one">小米体重器</p>
+ 				<p class="two">简约纤薄，身体数据精准掌握</p>
+ 				<p class="three">149元</p>
+ 				<div class="free">免邮费</div>
+ 			</div>
+ 				<!-- pro-pic-2 红米4A -->
+ 			<div class="pro-pic-2 fl"><img src="images1/hongmi.png" alt="红米4A">
+ 				<p class="one">红米6A</p>
+ 				<p class="two">AI人脸解锁，小巧全面屏，高性能处理器</p>
+ 				<p class="three">599元</p>
+ 			</div>
+ 				<!-- pro-pic-2 小米手机8 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/xiaomi.png" alt="小米8">
+ 				<p class="one">小米8 6GB+64GB</p>
+ 				<p class="two">全球首款双频GPS，骁龙845处理器</p>
+ 				<p class="three">2699元</p>
+ 				<div class="fresh">新品</div>
+ 			</div>
+ 				<!-- pro-pic-2 米家水壶 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/shuihu.png" alt="米家水壶">
+ 				<p class="one">米家水壶</p>
+ 				<p class="two">能放在口袋的风扇</p>
+ 				<p class="three">99元</p>
+ 			</div>
+ 				<!-- pro-pic-2 小米笔记本 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/computer.png" alt="小米笔记本Air">
+ 				<p class="one">小米笔记本Air 13.3" 独立显卡</p>
+ 				<p class="two">指纹版，第七代处理器</p>
+ 				<p class="three">4999元</p>
+ 			</div>
+ 				<!-- pro-pic-2 智能相机 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/camera.png" alt="智能相机">
+ 				<p class="one">智能商机</p>
+ 				<p class="two">米家全景相机套装 黑色旅行运动360°自拍神器</p>
+ 				<p class="three">1599元</p>
+ 				<div class="fresh">新品</div>
+ 			</div>
+ 				<!-- pro-pic-2 米家驱蚊器 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/quwenqi.png" alt="驱蚊器" title="米家驱蚊器">
+ 				<p class="one">米家驱蚊器</p>
+ 				<p class="two">长效驱蚊 静享一整个夏天</p>
+ 				<p class="three">59元</p>
+ 				<div class="free">免邮费</div>
+ 			</div>
+ 			<!-- pro-pic-2 米家智能灯 -->
+ 			<div class="pro-pic-2 fl"><img src="images1/lamp.png" alt="米家智能灯">
+ 				<p class="one">米家LED吸顶灯</p>
+ 				<p class="two">| 色温亮度可调 | 墙壁开关切换光线</p>
+ 				<p class="three">399元</p>
+ 				<div class="fresh">新品</div>
+ 			</div>
+ 		</div>
+ 	</body>
+ 	</html>

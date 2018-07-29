@@ -1,0 +1,149 @@
+body{
+ background:#2286c6;
+ margin:0pc;
+ padding:0px;
+ font-size:12px;
+ font-family:Arial;
+ }
+#container{
+  margin:0px auto;
+  height:630px;
+  width:780px;
+  text-align:left;
+  background:#123456;
+  }
+#banner{
+margin:0px;
+padding:0px;
+background:#789;
+height:150px;
+width:100%;
+}
+#globallink{
+margin:0px;
+padding:0px;
+}
+#globallink ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+#globallink ul li{
+float:left;
+text-align:center;
+width:78px;
+}
+#globallink ul li a{
+display:block;
+padding:9px 6px 11px 6px;
+margin:0px;
+background:url("images/button1.png") no-repeat;
+} 
+#globallink a:link,#globallink a:visited{
+color:044a87;
+text-decoration:underline;
+} 
+#globallink a:hover{
+color:#ffffff;
+text-decoration:none;
+background:url("images/button_bg.png") no-repeat;
+}
+#left{
+margin:0px;
+padding:0px 0px 5px 0px;
+color:#d8ecff;
+background:#ffffff;
+width:200px;
+float:left;
+}
+#weather{
+background:url("images/weather.png") no-repeat 5px 0px;
+margin:0px 5px;
+padding:10px;
+background-color:#5ea6eb;
+}
+#weather h3{
+ font-size:12px;
+ 上右下左
+ padding:24px 0px 0px 74px;
+ color:#ffffff;
+ margin:0px;
+}
+#weather ul{
+margin:0px 5px 0px 5px;
+padding:15px 0px 0px 10px;
+list-style-type:none;
+}
+#today h3{
+color:#003973;
+font-size:12px;
+background:#bbddff url("images/button_bg.png") no-repeat 5px 7px;
+padding:4px 0px 2px 15px;
+margin:0px 0px 5px 0px;
+}
+#today {
+background:#5ea6eb;
+margin:0px 5px;
+padding:0px 0px 10px 0px;
+}
+#today ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+#today ul li{
+text-align:center;
+}
+#today ul li img{
+border:1px solid #ffffff;
+margin:8px 0px 0px 0px;
+}
+#today ul li a:link,#today ul li a:visited{
+color:#d8ecff;
+text-decoration:none;
+}
+#today ul li a:hover{
+color:#ffff00;
+text-decoration:underline;
+}
+#middle{
+margin:0px 2px;
+padding:5px 0px 5px 0px;
+background:#ffffff;
+width:320px;
+float:left;
+}
+#right{
+margin:0px;
+padding:0px 0px 5px 0px;
+background:pink;
+height:370px;
+width:176px;
+float:left;
+}
+#middle div{
+margin:0px 5px;
+}
+#middle h3{
+margin:0px;
+padding:0px;
+height:41px;
+}
+#middle h3 span{
+display:none;/*去掉文字，最终换成图片*/
+}
+#beauty{
+margin:15px 0px 0px 0px;
+padding:0px;
+}
+#beauty h3{
+background:url{"images/meijingxunzong.png"}no-repeat;
+}
+#footer{
+margin:0px;
+padding:1px 0px;
+background:yellow;
+height:30px;
+width:100%;
+clear:both;
+}

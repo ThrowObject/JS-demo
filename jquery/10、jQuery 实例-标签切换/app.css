@@ -1,0 +1,59 @@
+ul,li{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+li{
+	float: left;
+	background-color: #868686;
+	color: #ffffff;
+	padding:5px;
+	margin-right: 2px;
+	border: 1px solid #ffffff;
+}
+.tabin{
+	background-color: #6e6e6e;
+	/*内容1和标签边框颜色相同就可以连起来 相距1px*/
+	border: 1px solid #6e6e6e;
+}
+.contentfirst{
+/*清除content下面元素浮动*/
+    clear:both;
+    background-color: #6e6e6e;
+	color: #ffffff;
+	width: 300px;
+	height: 100px;
+	padding:10px;
+	display: none;
+}
+.content{
+	/*display: block 此元素将显示为块级元素，此元素前后会带有换行符。*/
+	display: block;
+
+}
+#tabsecond li{
+  float: left;
+  background-color: #f2f6f8;
+  color: blue;
+  padding:0px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+#tabsecond li.tabin{
+	background-color: #f2f6f8;
+	border: 1px solid #000000;
+	border-bottom: 0;
+	z-index: 100;
+	position: relative;
+	/*position: relative;position: relative;top: -2px; 把边框覆盖*/
+}
+#contentsecond{
+	width: 500px;
+	height: 200px;
+	padding:10px;
+	background-color:#f2f6f8;
+	clear: left;
+	border: 1px solid #000000;
+	position: relative;
+	top: -2px;
+}
